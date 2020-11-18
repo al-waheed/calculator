@@ -1,0 +1,29 @@
+<div class = "calculator">
+    <input type="text" [value]="currentnumber" class="calculator-display" placeholder="0">
+    <div class="calculator-button">
+  
+    <input type="button" value="+" class="key" (click)="screenDisplay('+')" >
+    <input type="button" value="-" class="key" (click)="screenDisplay('-')">
+    <input type="button" value="*" class="key" (click)="screenDisplay('*')">
+    <input type="button" value="/" class="key" (click)="screenDisplay('/')">
+
+    <input type="button" value="7" class="keys" (click)="screenDisplay('7')">
+    <input type="button" value="8" class="keys" (click)="screenDisplay('8')">
+    <input type="button" value="9" class="keys" (click)="screenDisplay('9')">
+
+    <input type="button" value="4" class="keys" (click)="screenDisplay('4')">
+    <input type="button" value="5" class="keys" (click)="screenDisplay('5')">
+    <input type="button" value="6" class="keys" (click)="screenDisplay('6')">
+
+    <input type="button" value="1" class="keys" (click)="screenDisplay('1')">
+    <input type="button" value="2" class="keys" (click)="screenDisplay('2')">
+    <input type="button" value="3" class="keys" (click)="screenDisplay('3')">
+
+    <input type="button" value="0" class="keys" (click)="screenDisplay('0')">
+    <input type="button" value="." class="decimal" (click)="screenDisplay('.')">
+    <input type="button" value="AC" class="clear-all" (click)="screenDisplay('AC')">
+
+    <input type="button" value="=" class="sum-all" (click)="getAnswer()">
+
+  </div>
+</div>
